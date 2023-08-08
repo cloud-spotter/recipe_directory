@@ -38,7 +38,6 @@ class AlbumRepository():
         # INSERT INTO albums
         # (title, release_year, artist_id)
         # VALUES( album.title, album.release_year, album.artist_id );
-
         # Create a new album
         self._connection.execute('INSERT INTO albums(title, release_year, artist_id) VALUES(%s, %s, %s)', [album.title, album.release_year, album.artist_id])
         return None
@@ -47,9 +46,11 @@ class AlbumRepository():
     #def update(album)
         # Executes the SQL query: 
 
-    def delete(album):
+    def delete(self, id):
         # Executes the SQL query:
         # DELETE FROM albums WHERE id = $1;
 
         # Delete an album by its id
-        pass
+        self._connection.execute(
+            'DELETE FROM albums WHERE id = %s', [id])
+        return None
