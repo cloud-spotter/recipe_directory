@@ -206,7 +206,7 @@ album.artist_id # -> 1
 # format albums to strings nicely
 
 album = Album(1, "Test Title", 1989, 1)
-# -> "Album(1, "Test Title", 1989, 1)"
+# -> "Album(1, 'Test Title', 1989, 1)"
 
 # 4 
 # compare two identical artists and have them be equal
