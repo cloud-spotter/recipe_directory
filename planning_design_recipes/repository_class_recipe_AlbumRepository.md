@@ -101,6 +101,8 @@ class Album:
 # "Doolittle"
 # >>> student.release_year
 # 1989
+# >>> album.artist_id
+# 1
 
 ```
 
