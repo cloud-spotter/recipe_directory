@@ -60,7 +60,7 @@ rating: int
 
 ```sql
 -- EXAMPLE
--- file: recipe_table.sql
+-- file: recipes.sql
 
 -- Replace the table name, columm names and types.
 
@@ -75,7 +75,7 @@ CREATE TABLE recipes (
 ## 5. Create the table
 
 ```bash
-psql -h 127.0.0.1 recipes < recipe_table.sql
+psql -h 127.0.0.1 recipe_directory < recipes.sql
 ```
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
